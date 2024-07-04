@@ -20,7 +20,7 @@ public class VeicularApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		for (int i = 1; i <= 50; i++) {
+		for (int i = 1; i <= 10; i++) {
 			Veiculo veiculo = new Veiculo();
 			veiculo.setPlaca("ABC" + i); // Exemplo de geração de placa dinâmica
 			veiculo.setChassisNumber("1HGCM82633A00000" + i); // Exemplo de geração de número de chassi dinâmico
