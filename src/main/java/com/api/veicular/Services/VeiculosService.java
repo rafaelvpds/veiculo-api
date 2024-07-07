@@ -12,18 +12,18 @@ public class VeiculosService {
     VeiculosRepository repository;
 
     public Veiculo create(Veiculo veiculo) {
-        Veiculo newVeiculo = new Veiculo();
-        newVeiculo.setBrand(veiculo.getBrand());
-        newVeiculo.setChassisNumber(veiculo.getChassisNumber());
-        newVeiculo.setModel(veiculo.getModel());
-        newVeiculo.setPlaca(veiculo.getPlaca());
-        newVeiculo.setProprietaryDocument(veiculo.getProprietaryDocument());
-        newVeiculo.setProprietaryName(veiculo.getProprietaryName());
-        newVeiculo.setYearManifactory(veiculo.getYearManifactory());
-        newVeiculo.setYearModel(veiculo.getYearModel());
-        newVeiculo.setRenavam(veiculo.getRenavam());
-        repository.save(newVeiculo);
+        Veiculo newVeiculos = new Veiculo();
+        newVeiculos.setBrand(veiculo.getBrand());
+        newVeiculos.setChassisNumber(veiculo.getChassisNumber());
+        newVeiculos.setModel(veiculo.getModel());
+        newVeiculos.setPlaca(veiculo.getPlaca());
+        newVeiculos.setProprietaryDocument(veiculo.getProprietaryDocument());
+        newVeiculos.setProprietaryName(veiculo.getProprietaryName());
+        newVeiculos.setYearManifactory(veiculo.getYearManifactory());
+        newVeiculos.setYearModel(veiculo.getYearModel());
+        newVeiculos.setRenavam(veiculo.getRenavam());
+        repository.save(newVeiculos);
 
-        return newVeiculo;
+        return newVeiculos;
     }
 }
