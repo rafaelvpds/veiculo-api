@@ -19,14 +19,15 @@ public class VeiculoController {
     @Autowired
     VeiculosRepository veiculosRepository;
 
+    @GetMapping("/placas")
+    public ResponseEntity<List<Veiculo>> findAll() {
+        return ResponseEntity.ok(veiculosRepository.findAll());
+    }
+
     @GetMapping("/placas/{placa}")
     public ResponseEntity<Veiculo> findByPlaca(@PathVariable String placa) {
         System.out.println(veiculosRepository.findByPlaca(placa));
         return ResponseEntity.ok(veiculosRepository.findByPlaca(placa));
-    }
-
-    public ResponseEntity<List<Veiculo>> findAll() {
-        return ResponseEntity.ok(veiculosRepository.findAll());
     }
 
 }
