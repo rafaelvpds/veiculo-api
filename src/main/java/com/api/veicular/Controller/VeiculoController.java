@@ -24,10 +24,10 @@ public class VeiculoController {
         return ResponseEntity.ok(veiculosRepository.findAll());
     }
 
-    @GetMapping("/placas/{placa}")
-    public ResponseEntity<Veiculo> findByPlaca(@PathVariable String placa) {
-        System.out.println(veiculosRepository.findByPlaca(placa));
-        return ResponseEntity.ok(veiculosRepository.findByPlaca(placa));
+    @GetMapping("/placas/{placas}")
+    public ResponseEntity<Veiculo> findByPlaca(@PathVariable String placas) {
+        System.out.println(veiculosRepository.findByPlaca(placas));
+        return ResponseEntity.ok(veiculosRepository.findByPlaca(placas));
     }
 
 }
